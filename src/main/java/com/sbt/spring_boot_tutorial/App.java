@@ -19,8 +19,11 @@ public class App {
 
 	@RequestMapping("/test")
 	public void test() {
-		chinese.sayHello();
-		System.out.println(chinese.getClass());
+		try {
+			chinese.sayHello();
+			chinese.println("cold_blade");
+		} catch (Exception e) {
+		}
 	}
 
 	public static void main(String[] args) {

@@ -4,9 +4,14 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Chinese {
-	
+
 	@Timer
-	public void sayHello() {
-		System.out.println("Hello......");
+	public void sayHello() throws InterruptedException {
+		Thread.sleep(1000);
+	}
+
+	public String println(String msg) {
+		msg.substring(0);
+		return "println";
 	}
 }
